@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "start": "nodemon server",
-    "build": "node server.js"
-
+  "start": "node server.js", 
+  "build": "echo 'No build step needed'"
   },
   "author": "",
   "license": "ISC",
