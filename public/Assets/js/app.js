@@ -33,6 +33,7 @@ var AppProcess = (function () {
       }
       if (isAudioMute) {
         audio.enabled = true;
+        console.log("Mic unmute")
         $(this).html(
           "<span class='material-icons' style='width:100%;'>mic</span>"
         );
@@ -72,6 +73,7 @@ var AppProcess = (function () {
         audio: true,
       });
       audio = astream.getAudioTracks()[0];
+      console.log("audio::::",audio)
       audio.enabled = false;
     } catch (e) {
       console.log(e);
